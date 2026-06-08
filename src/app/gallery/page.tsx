@@ -50,8 +50,15 @@ after: "/parkwood-after.jpeg",
   before: "/marilyn before.png",
   after: "/marilyn after.png",
 },
+{
+    title: "House Soft Wash – Timberlake, NC",
+    location: "Timberlake, NC",
+    before: "/timberlake before.png",
+    after: "/timberlake after.png",
+    description:
+      "Exterior house soft wash completed in Timberlake, NC. Removed dirt, algae, and organic buildup from the siding to restore curb appeal and brighten the home's appearance.",
+},
 ];
-
 export default function GalleryPage() {
   return (
     <>
