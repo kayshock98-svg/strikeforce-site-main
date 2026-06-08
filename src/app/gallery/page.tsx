@@ -38,7 +38,7 @@ after: "/parkwood-after.jpeg",
   type: "House Washing",
   description:
     "Completed a full exterior house wash on a two-story home in Vintage Hill, removing dirt, algae, and organic buildup to restore the siding's appearance.",
-  before: "/Sitsope before.png",
+  before: "/sitsope before.png",
   after: "/Sitsope after.png",
 },
 
