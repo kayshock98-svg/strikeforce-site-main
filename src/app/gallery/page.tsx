@@ -33,6 +33,23 @@ const projects = [
   before: "/parkwood-before.jpeg",
 after: "/parkwood-after.jpeg",
 },
+{
+  title: "House Wash - Vintage Hill, Durham",
+  type: "House Washing",
+  description:
+    "Completed a full exterior house wash on a two-story home in Vintage Hill, removing dirt, algae, and organic buildup to restore the siding's appearance.",
+  before: "/Sitsope before.png",
+  after: "/Sitsope after.png",
+},
+
+{
+  title: "Exterior House Wash - Bonsack Creek, Durham",
+  type: "House Washing",
+  description:
+    "Completed a full exterior house wash on a 3,000 sq ft home in Bonsack Creek, improving curb appeal and restoring the home's exterior appearance.",
+  before: "/marilyn before.png",
+  after: "/marilyn after.png",
+},
 ];
 
 export default function GalleryPage() {
