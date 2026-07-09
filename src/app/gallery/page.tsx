@@ -9,6 +9,29 @@ export const metadata: Metadata = {
 };
 
 const projects = [
+  {
+  title: "Driveway Cleaning Woodcroft",
+  type: "Driveway cleaning",
+  description:
+    "Completed an exterior cleaning to restore curb appeal and brighten the property.",
+  before: "/Mark Before.png",
+  after: "/Mark After.png",
+},
+  {
+  title: "House Wash in the Southpoint Area",
+  type: "House Washing",
+  description:
+    "Completed an exterior house wash to refresh the home and improve curb appeal as well as cleaned all the exterior windows.",
+  after: "/Rose After.png",
+},
+{
+  title: "Driveway cleaning Woodcroft",
+  type: "Driveway cleaning",
+  description:
+    "Completed an exterior house wash removing dirt, algae, and organic buildup.",
+  before: "/Khalida Before.png",
+  after: "/Khalida After.png",
+},
     {
     title: "Exterior House Wash — Lynn Hollow, Durham",
     type: "House Washing",
@@ -77,24 +100,28 @@ export default function GalleryPage() {
             {projects.map((p, i) => (
               <div key={i} className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-xl transition-all group">
               <div className="relative h-52 w-full flex">
+  {p.before && (
   <img
     src={p.before}
     alt={`${p.title} before`}
     className="w-1/2 h-full object-cover"
   />
+)}
 
-  <img
-    src={p.after}
-    alt={`${p.title} after`}
-    className="w-1/2 h-full object-cover"
-  />
+<img
+  src={p.after}
+  alt={`${p.title} after`}
+  className={p.before ? "w-1/2 h-full object-cover" : "w-full h-full object-cover"}
+/>
 
-  <div className="absolute left-1/2 top-0 bottom-0 w-1 bg-blue-500"></div>
-
-  <span className="absolute left-4 top-4 bg-black/70 text-white text-xs px-2 py-1 rounded">
-    BEFORE
-  </span>
-
+{p.before && (
+  <>
+<div className="absolute left-1/2 -translate-x-1/2 top-0 bottom-0 w-1 bg-blue-500"></div>
+    <span className="absolute left-4 top-4 bg-black/70 text-white text-xs px-2 py-1 rounded">
+      BEFORE
+    </span>
+  </>
+)}
   <span className="absolute right-4 top-4 bg-blue-600 text-white text-xs px-2 py-1 rounded">
     AFTER
   </span>
